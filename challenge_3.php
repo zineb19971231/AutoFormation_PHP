@@ -1,15 +1,13 @@
 <?php
 
 
-$friends= array("ahmed"=>"100","mohamed"=>"200","sayed"=>"100","eman"=>"70");
+$friends= array("ahmed"=>"10","mohamed"=>"700","sayed"=>"245","eman"=>"70");
+echo " the ones who owe more than 100 MAD are : <br>" ;
 foreach( $friends as $key => $value){
      array_sum($friends)  ;
      if ($value > 100) {
-         echo " the ones who owe more than 100 MAD are : <br>" . $key . " : " . $value . "<br>";
+         echo $key . " : " . $value . "<br>" ;
      }
 }
-echo  "the total is " , array_sum($friends) , " MAD ";
-
-
-
+echo  " the total is " , array_sum($friends) , " MAD <br>";
 ?>
